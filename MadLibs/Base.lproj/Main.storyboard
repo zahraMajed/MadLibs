@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="UC5-Qp-ejb">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="zPE-y0-lor">
                             <connections>
-                                <segue destination="7SN-5N-Ftj" kind="show" id="j0i-Cy-DDD"/>
+                                <segue destination="7SN-5N-Ftj" kind="presentation" id="aES-0n-2wR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -49,28 +49,28 @@
         <!--SecondVC-->
         <scene sceneID="KyD-SA-Ja8">
             <objects>
-                <viewController id="7SN-5N-Ftj" customClass="SecondVC" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7SN-5N-Ftj" customClass="SecondVC" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GTc-Xu-3tm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Adjective" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49v-ek-wSa">
-                                <rect key="frame" x="16.5" y="138" width="381" height="54"/>
+                                <rect key="frame" x="16.5" y="94" width="381" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-hW-y53">
-                                <rect key="frame" x="16.5" y="212" width="381" height="54"/>
+                                <rect key="frame" x="16.5" y="168" width="381" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Noun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHA-l2-nbk">
-                                <rect key="frame" x="16.5" y="360" width="381" height="54"/>
+                                <rect key="frame" x="16.5" y="316" width="381" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwe-76-ebE">
-                                <rect key="frame" x="116.5" y="459" width="181" height="74"/>
+                                <rect key="frame" x="116.5" y="415" width="181" height="74"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
                                     <attributedString key="attributedTitle">
@@ -89,7 +89,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAp-NH-TQp">
-                                <rect key="frame" x="16.5" y="286" width="381" height="54"/>
+                                <rect key="frame" x="16.5" y="242" width="381" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -143,6 +143,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vAr-3p-gMn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -161,6 +162,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
